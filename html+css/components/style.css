@@ -1,0 +1,174 @@
+/** Рейтинг 1 **/
+#rating{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: inline-block;
+}
+#rating input{
+    display: none;
+}
+#rating label{
+    color: grey;
+}
+#rating label:before{
+    content: "\2605";
+    line-height: 28px;
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: -3px;
+}
+#rating label:last-child:before{
+
+}
+#rating label:hover,
+#rating label:hover ~ label,
+#rating input:checked ~ label{
+    color: gold;
+}
+/** /Рейтинг 1 **/
+
+
+/** Рейтинг 2 **/
+#rating-2 span:before{
+    line-height: 28px;
+    font-size: 28px;
+    margin-right: -3px;
+}
+
+#rating-2 span:hover{
+    cursor:pointer;
+}
+
+#rating-2.one-star > span:nth-child(n):before,
+#rating-2.two-star > span:nth-child(n):before,
+#rating-2.three-star > span:nth-child(n):before,
+#rating-2.four-star > span:nth-child(n):before,
+#rating-2.five-star > span:nth-child(n):before{
+    content: "\2605";
+    color: gold;
+}
+
+#rating-2.zero-star > span:nth-child(n):before,
+#rating-2.one-star > span:nth-child(n+2):before,
+#rating-2.two-star > span:nth-child(n+3):before,
+#rating-2.three-star > span:nth-child(n+4):before,
+#rating-2.four-star > span:nth-child(n+5):before{
+    /*content: "\2606";*/
+    content: "\2605";
+    color: grey;
+}
+/** /Рейтинг 2 **/
+
+
+/** Прогресс бар **/
+#progress-bar{
+    position: relative;
+    width: 350px;
+    height: 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+#progress-bar > progress {
+    width: 100%;
+    height: 12px;
+    border-radius: 10px;
+    border: 0;
+    vertical-align: 0.2em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: 0.3s ease-out;
+}
+
+#progress-bar > progress::-webkit-progress-bar{
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: inset 0px 1px 4px 0px rgba(0,0,0,0.2);
+}
+
+#progress-bar > progress::-webkit-progress-value{
+    border-radius: 10px;
+    border: 0;
+    background: linear-gradient(to top, #a7f458,#64c01c,#a7f458);
+    transition: 0.7s linear;
+}
+
+#progress-bar > progress::-moz-progress-bar {
+    border-radius: 10px;
+    border: 0;
+    background: linear-gradient(to top, #a7f458,#64c01c,#a7f458);
+}
+
+#progress-bar > .percentage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+/** /Прогресс бар **/
+
+/** Кнопки **/
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    background: #d2d2d2 linear-gradient(to top, #e2e2e2, #f2f2f2);
+    background: #d2d2d2 -webkit-linear-gradient(to top, #e2e2e2, #f2f2f2);
+    background: #d2d2d2 -moz-linear-gradient(to top, #e2e2e2, #f2f2f2);
+    background: #d2d2d2 -ms-linear-gradient(to top, #e2e2e2, #f2f2f2);
+    background: #d2d2d2 -o-linear-gradient(to top, #e2e2e2, #f2f2f2);
+    box-sizing: border-box;
+    margin: 5px 15px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.btn:hover{
+    background: #d2d2d2;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:active{
+    background: #d2d2d2 linear-gradient(to top, #e2e2e2, #f2f2f2);
+    background: #d2d2d2 -webkit-linear-gradient(to top, #e2e2e2, #f2f2f2);
+    background: #d2d2d2 -moz-linear-gradient(to top, #e2e2e2, #f2f2f2);
+    background: #d2d2d2 -ms-linear-gradient(to top, #e2e2e2, #f2f2f2);
+    background: #d2d2d2 -o-linear-gradient(to top, #e2e2e2, #f2f2f2);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.btn-small{
+    min-width: 80px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.btn-medium{
+    min-width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.btn-big{
+    min-width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+/** /Кнопки **/

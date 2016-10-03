@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая задача от tutu.ru</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js" type="text/javascript"></script>-->
+</head>
+<body>
+    <div class="container">
+        <div id="dataButtons" class="row text-center">
+            <p>Выберете объем данных:</p>
+            <button data-amount="few" class="btn btn-default">Маленький</button>
+            <button data-amount="loads" class="btn btn-default">Большой</button>
+            <hr />
+        </div>
+        <div class="row" data-role="data-table">
+            <div class="form-inline">
+                <input type="text" id="searchField" class="form-control">
+                <button id="searchButton" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-search"></span>
+                    Найти
+                </button>
+                <button id="resetButton" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-remove-circle"></span>
+                    Очистить поиск
+                </button>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th><span data-order="up" data-sort-by="id">ID<span></span></span></th>
+                    <th><span data-order="up" data-sort-by="firstName">First Name<span></span></span></th>
+                    <th><span data-order="up" data-sort-by="lastName">Last Name<span></span></span></th>
+                    <th><span data-order="up" data-sort-by="email">E-mail<span></span></span></th>
+                    <th><span data-order="up" data-sort-by="phone">Phone<span></span></span></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="row text-center" data-role="pagination">
+            <nav aria-label="page navigation">
+                <ul class="pagination"></ul>
+            </nav>
+        </div>
+        <div class="row" data-role="additional-info"></div>
+    </div>
+
+    <script src="./app/app.js"></script>
+
+    <script id="tableTemplate" type="text/x-handlebars-template">
+        <tbody>
+        {{#each list}}
+            <tr data-person-id="{{id}}" data-person-phone="{{phone}}">
+                <td>{{id}}</td>
+                <td>{{firstName}}</td>
+                <td>{{lastName}}</td>
+                <td>{{email}}</td>
+                <td>{{phone}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </script>
+
+    <script id="infoTemplate" type="text/x-handlebars-template">
+        <div class="col-md-6">
+            <div class="well">
+            {{#each list}}
+                Выбран пользователь <b>{{firstName}} {{lastName}}</b><br>
+                Описание:<br>
+                <textarea cols="55" rows="5" disabled>{{description}}</textarea><br>
+                {{#with adress}}
+                    Адрес проживания:
+                    <address>
+                        <b>{{streetAddress}}</b><br>
+                        Город: <b>{{city}}</b><br>
+                        Провинция/штат: <b>{{state}}</b><br>
+                        Индекс: <b>{{zip}}</b><br>
+                    </address>
+                {{/with}}
+            {{/each}}
+            </div>
+        </div>
+    </script>
+
+</body>
+</html>

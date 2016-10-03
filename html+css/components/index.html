@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html test</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <h2>Компонент оценки и показа рейтинга</h2>
+    <!-- Рейтинг 1 -->
+    <div id="rating">
+        <input type="radio" id="rating__star5" name="rating__stars-group"/><label for="rating__star5"></label>
+        <input type="radio" id="rating__star4" name="rating__stars-group"/><label for="rating__star4"></label>
+        <input type="radio" id="rating__star3" name="rating__stars-group"/><label for="rating__star3"></label>
+        <input type="radio" id="rating__star2" name="rating__stars-group"/><label for="rating__star2"></label>
+        <input type="radio" id="rating__star1" name="rating__stars-group"/><label for="rating__star1"></label>
+    </div>
+    <!-- /Рейтинг 1 -->
+    <br />
+    <!-- Рейтинг 2 -->
+    <div id="rating-2" class="zero-star">
+        <span data-star-number="one"></span>
+        <span data-star-number="two"></span>
+        <span data-star-number="three"></span>
+        <span data-star-number="four"></span>
+        <span data-star-number="five"></span>
+    </div>
+    <!-- /Рейтинг 2 -->
+
+    <hr />
+    <h2>Компонент прогресс-бар</h2>
+    <!-- Прогресс бар -->
+    <div id="progress-bar">
+        <progress value="20" max="100">
+        </progress>
+        <span class="percentage">20%</span>
+    </div>
+    <!-- /Прогресс бар -->
+
+    <hr />
+    <h2>Компонент кнопка</h2>
+    <!-- Кнопки -->
+    <div>
+        <input type="button" class="btn btn-small" value="Установить на 20%">
+        <input type="button" class="btn btn-medium" value="Выполнить">
+        <input type="button" class="btn btn-big" value="Сбросить">
+    </div>
+
+    <div>
+        <a href="#" class="btn btn-small">Установить на 20%</a>
+        <a href="#" class="btn btn-medium">Выполнить</a>
+        <a href="#" class="btn btn-big">Сбросить</a>
+    </div>
+
+    <div>
+        <div class="btn btn-small">Установить на 20%</div>
+        <div class="btn btn-medium">Выполнить</div>
+        <div class="btn btn-big">Сбросить</div>
+    </div>
+
+    <div>
+        <button class="btn btn-small">Установить на 20%</button>
+        <button class="btn btn-medium">Выполнить</button>
+        <button class="btn btn-big">Сбросить</button>
+    </div>
+    <!-- /Кнопки -->
+
+    <script src="script.js"></script>
+</body>
+</html>

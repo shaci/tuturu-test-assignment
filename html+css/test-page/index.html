@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-left"></div>
+        <div class="col-right">
+            <ul class="navigation">
+                <li><a href="#" class="text-violet">Личный кабинет</a></li>
+                <li><a href="#" class="text-green">Раздел 1</a></li>
+                <li><a href="#" class="text-blue">Раздел 2</a></li>
+                <li><a href="#" class="text-orange">Раздел 3</a></li>
+                <li><a href="#" class="text-black">Раздел 4</a></li>
+                <li><a href="#" class="text-red">Раздел 5</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-left">
+            <span>&#9728; TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</span>
+        </div>
+        <div class="col-right">
+            <div class="header">
+                <span class="header__title">Заполните форму</span>
+                <div class="header__progress">
+                    <div class="header__progress__step passed">1</div>
+                    <div class="header__progress__step passed">2</div>
+                    <div class="header__progress__step current">3</div>
+                    <div class="header__progress__step">4</div>
+                    <div class="header__progress__step">5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-left"></div>
+        <div class="col-right">
+            <div class="separator">
+                <span class="separator__text">Общая информация</span>
+                <div class="separator__line"><hr /></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-left">
+            <span>Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми.
+            Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делвем это качественно,
+            обеспечивая самую лучшую поддержку благодаря собственному контакт-центру</span>
+        </div>
+        <div class="col-right">
+            <form action="" method="POST">
+                <table class="form">
+                    <tr>
+                        <td class="form__column">
+                            <label for="form__last-name">Фамилия</label>
+                            <input id="form__last-name" type="text" />
+                        </td>
+                        <td class="form__column">
+                            <label for="form__first-name">Имя</label>
+                            <input id="form__first-name" type="text" />
+                        </td>
+                        <td class="form__column">
+                            <label for="form__second-name">Отчество</label>
+                            <input id="form__second-name" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form__column">
+                            <p>Меняли фамилию?</p>
+                            <input id="form__last-name-changed-true" type="radio" name="last-name-changed" value="true"/>
+                            <label for="form__last-name-changed-true">Да</label>
+                            <input id="form__last-name-changed-false" type="radio" name="last-name-changed" value="false" checked/>
+                            <label for="form__last-name-changed-false">Нет</label>
+                        </td>
+                        <td class="form__column">
+                            <p>Пол</p>
+                            <input id="form__gender-male" type="radio" name="gender" value="male" checked/>
+                            <label for="form__gender-male">Муж</label>
+                            <input id="form__gender-female" type="radio" name="gender" value="female"/>
+                            <label for="form__gender-female">Жен</label>
+                        </td>
+                        <td class="form__column">
+                            <p>Семейное положение</p>
+                            <select name="family-status">
+                                <option value="Женат / Замужем">Женат / Замужем</option>
+                                <option value="Холост / Не замужем">Холост / Не замужем</option>
+                                <option value="Разведен / Разведена">Разведен / Разведена</option>
+                                <option value="Вдовец / Вдова">Вдовец / Вдова</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form__column">
+                            <p>Гражданство</p>
+                            <select name="citizenship">
+                                <option selected value="Российская Федерация">Российская Федерация</option>
+                                <option value="Казахстан">Казахстан</option>
+                                <option value="Украина">Украина</option>
+                            </select>
+                        </td>
+                        <td class="form__column">
+                            <p>Дата рождения</p>
+                            <select name="birth-day" class="form__birth-day">
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select name="birth-month" class="form__birth-month">
+                                <option value="январь">январь</option>
+                                <option selected value="июнь">июнь</option>
+                            </select>
+                            <select name="birth-year" class="form__birth-year">
+                                <option selected value="1970">1970</option>
+                                <option value="2016">2016</option>
+                            </select>
+                        </td>
+                        <td class="form__column"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="form__column">
+                            <label for="form__birth-place">Место рождения</label>
+                            <input id="form__birth-place" type="text" />
+                            <span class="form__helper">Например, Россия, Комсомольск-на-Амуре</span>
+                        </td>
+                    </tr>
+                </table>
+                <div class="row form__btn-block">
+                    <input id="form__btn-backward" type="button" value="&#8592;&nbsp;Назад">
+                    <input id="form__btn-forward" type="submit" value="Далее&nbsp;&#8594;">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
