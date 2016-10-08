@@ -1,0 +1,17 @@
+.tableCmpt__table th span,
+.tableCmpt__table tbody tr{
+    cursor: pointer;
+}
+
+.tableCmpt__selected{
+    background-color: #f5f5f5;
+}
+
+#tableCmpt__searchButton,
+#tableCmpt__resetButton{
+    display: none;
+}
+
+.tableCmpt__additional-info textarea{
+    resize: vertical;
+}
